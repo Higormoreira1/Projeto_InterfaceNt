@@ -1,3 +1,3 @@
 # Projeto_InterfaceNt
---Netflix
---Instagram
+- Netflix
+- Instagram
