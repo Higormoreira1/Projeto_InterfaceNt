@@ -1,0 +1,38 @@
+:root{/*Variaveis de paleta de cor para utilizar por todo site*/
+    --azul: #0003d1;
+    --branco: rgb(255, 255, 255);
+    --preto: Black;
+    --azulclaro: cornflowerblue; 
+}
+body{
+    background: var(--branco);
+    font-family: 'Times New Roman', Times, serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header .caixa{
+    display: flex;/*Joga tudo que está ligado a ele para a linha*/
+    flex-direction: row;/*Joga os itens para a linha inicial do navegador, caso não coloque o display: flex faz isso por padrão*/
+    align-items: center;/*Alinhando os itens no centro*/
+    justify-content: space-between;/*Vai trabalhar a disposição dos elementos de forma horizontal*/
+    background: var(--preto);
+}
+header .logo{
+    font-weight: bold;
+    font-family: "Arial Black";
+    color: var(--azul);
+    font-size: 30px;
+    margin-left: 5px;
+}
+header nav a{
+    color: var(--branco);
+    font-size: 17px;;
+    text-decoration: none;
+    margin-right: 10px;
+}
+header nav a:hover{/*Com essa função hover, quando passar o mouse no link ele trocará de cor enquanto o mouse estiver em cima.*/
+    color:var(--azulclaro);
+}
