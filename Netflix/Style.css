@@ -132,7 +132,7 @@ header nav a:hover{/*Com essa função hover, quando passar o mouse no link ele 
 h4{
     font-family: "Cambria";
     padding: 2px;
-    margin: 2px 30px;
+    margin: 20px 20px;
     font-size: 20px;
     text-shadow: 1.5px 1.5px 1.5px var(--azul);
 }
@@ -143,4 +143,18 @@ h4{
 .box:hover{
     border: 2px solid var(--branco);
     transition: .1s ease all;
+}
+div h4 .doc{
+    font-family: "Cambria";
+    padding: 2px;
+    margin: 0px 20px;
+    font-size: 20px;
+    text-shadow: 1.5px 1.5px 1.5px var(--azul);
+}
+div h4 .filme{
+    font-family: "Cambria";
+    padding: 2px;
+    margin: 0px 20px;
+    font-size: 20px;
+    text-shadow: 1.5px 1.5px 1.5px var(--azul);
 }
