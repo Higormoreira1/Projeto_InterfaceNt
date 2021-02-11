@@ -1,38 +1,146 @@
 :root{/*Variaveis de paleta de cor para utilizar por todo site*/
-    --azul: #0003d1;
-    --branco: rgb(255, 255, 255);
-    --preto: Black;
+    --azul: #5153f0;
+    --branco: #fffafa;
+    --brancoescuro: #ddd9ce; 
+    --preto: rgb(15, 15, 15);
     --azulclaro: cornflowerblue; 
 }
-body{
-    background: var(--branco);
-    font-family: 'Times New Roman', Times, serif;
-}
-*{
+*{/*Reset do CSS*//*Vai aplicar essas ações por todo o conteudo dentro da página*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/*Elementos de Base*/
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--branco);
 }
 header .caixa{
     display: flex;/*Joga tudo que está ligado a ele para a linha*/
     flex-direction: row;/*Joga os itens para a linha inicial do navegador, caso não coloque o display: flex faz isso por padrão*/
     align-items: center;/*Alinhando os itens no centro*/
     justify-content: space-between;/*Vai trabalhar a disposição dos elementos de forma horizontal*/
-    background: var(--preto);
+    box-shadow: 2px 2px 2px 2px rgb(209, 208, 208);
 }
 header .logo{
+    text-transform: uppercase;
     font-weight: bold;
-    font-family: "Arial Black";
+    font-family: "Times New Roman";
     color: var(--azul);
-    font-size: 30px;
-    margin-left: 5px;
+    font-size: 35px;
+    margin-left: 35px;
+    text-decoration: none;
+    text-shadow: 2.1px 2.1px 2.1px var(--brancoescuro);/*Cria uma sombra no texto*/
+    transition: .3s ease all;
+}
+header .logo:hover{
+    color: white;
 }
 header nav a{
-    color: var(--branco);
+    color: var(--brancoescuro);
     font-size: 17px;;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 30px;
+    font-family: "Cambria";
+    transition: .2s ease all;
+}
+header nav a i{
+    margin-right: 2px;
 }
 header nav a:hover{/*Com essa função hover, quando passar o mouse no link ele trocará de cor enquanto o mouse estiver em cima.*/
-    color:var(--azulclaro);
+    color:var(--azul);
+}
+.botaologin{
+    margin: 5px;
+    padding: 3px 10px;
+    margin-right: 15px;
+    background-color: var(--azul);
+    border: none;
+    border-radius: 2px;
+    font-family: "Cambria";
+    font-size: 17px;
+    color: var(--brancoescuro)
+
+}
+.botaologin:hover{
+    border-radius: 2px;
+    background-color: var(--branco);
+    color: var(--pre)
+}
+/*Filme Principal*/
+.filmeprincipal{
+    font-size: 17px;
+    /*Cria uma camada em cima da imagem, um contraste,com os dois Rgb's*/
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)100%), url(Img/hawaiifive0.jpg);
+    /*Dando um tamanho para essa caixa e preenchendo todo seu espaço*/
+    height: 450px;
+    background-size: cover;
+    /*Dando distância ao cabeçalho acima*/
+    margin-top: 4px;
+    /*Movendo os elementos*/
+    display: flex;/*Joga os elementos por padrão em linha.*/
+    flex-direction: column;/*Coloca os elementos em coluna*/
+    /*Move tanto os elementos quanto os textos que estiverem na caixa*/
+    justify-content: center;/*Coloca os elementos no meio da coluna*/
+    /*Move os elementos*/
+    align-items: flex-start;/*Com esse atributo a propriedade manda os elementos sempre começarem da esquerda e não de maneira centralizada*/
+    box-shadow: 1px 1px 1px 1px white;
+}
+.descricao{
+    margin-bottom: 25px;
+    font-family: Georgia,'Times New Roman', Times, serif;
+}
+.titulo{
+    margin-top: 15%;
+    margin-bottom: 10px;
+    font-size: 45px;
+    font-weight: bold;
+    font-family:"Arial", Helvetica, sans-serif;
+}
+.filmeprincipal .caixa{
+    margin-top: 100px;
+    margin-left: 30px;
+    width: 400px;/*Nesse tamanho quando a página é minimizada os elementos dentro desse container ficarão com um tamanho adequado ao tamanho da tela
+    e quando normal ele permanecerá sem ultrapassar a tela/imagem de fundo, quanto menor a porcentagem, maior a limitação, a caixa total ".caixa" nesse caso fica nessa definição*/
+}
+.botao{
+    margin-top: 10px;
+    background-color: rgba(255, 251, 251, 0.418);
+    border: none;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 15px 30px;
+    margin-right: 10px;
+    font-size: 11px;
+    transition: .3s ease all;/*Gera uma transição mais suave entre os elementos*/
+}
+.botao:hover{
+    background-color: black;
+    color: white;
+}
+.botao i{
+    margin-right: 7px;
+}
+/*Carrosel*/
+.box{
+    height: 150px;
+    width: 180px;
+    display: block;
+}
+
+h4{
+    font-family: "Cambria";
+    padding: 2px;
+    margin: 2px 30px;
+    font-size: 20px;
+    text-shadow: 1.5px 1.5px 1.5px var(--azul);
+}
+.box{
+    border: 1px solid var(--brancoescuro);
+
+}
+.box:hover{
+    border: 2px solid var(--branco);
+    transition: .1s ease all;
 }

@@ -2,22 +2,79 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Livroflix - Livraria Digital</title>
+        <title>CINEFLIX - Digital</title>
         <link rel="stylesheet" href="Style.css">
-        <script src="Main.js"></script>
+
+        <!--OwlCss-->
+        <link rel="stylesheet" href="Style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="Style/owl/owl.theme.default.min.css">
+        <!--Responsividade-->
+        <link rel="stylesheet" href="Style/owl/responsividade/responsividade.css">
     </head>
     <body>
-        <header>
-            <div class="caixa">
-                <h2 class="logo">LIVROFLIX</h2>
-                <nav>
+        <header><!--Cabeçalho-->
+            <div class="caixa"><!--Caixa de Conteudo-->
+                <a class="logo" href="https://netflix.com" target="_blank">Cineflix</a><!--Logotipo da página-->
+                <nav><!--Menu de Navegação-->
                     <a href="">Inicio</a>
-                    <a href="">Romance</a>
-                    <a href="">Literatura</a>
-                    <a href="">Superior</a>
-                    <a href="">Poesia</a>
+                    <a href="">Filmes</a>
+                    <a href="">Séries</a>
+                    <a href="">Documentários</a>
+                    <a href=""><button class="botaologin"> 
+                        Login
+                        <i class="fas fa-key"></i>
+                    </button>
+                    </a>
                 </nav>
             </div>
         </header>
+        <main><!--Não deixa de ser uma caixa, porém informa a ferramenta de S.O que é onde está contido o conteudo principal-->
+            <div class="filmeprincipal">
+                <div class="caixa">
+                    <h3 class="titulo" >HAWAII FIVE-0</h3>
+                    <p class="descricao">A equipe especial de policiais, liderada pelo comandante Steve McGarret, recebeu carta branca da governadora do Havaí para fazer o que for preciso para erradicar o crime na ilha.</p>
+                    <div class="botoes"><!--Não herda as ações da div mãe, pois por estar dentro de uma div-filha é uma nova div e toda nova div por padrão tem o display:block;-->
+                        <button class="botao" type="button">
+                            <i class="fas fa-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button class="botao" type="button">
+                            <i class="fas fa-info-circle"></i>
+                            INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="carrosel"><!--Caixa que armazena o carrosel-->
+            <h4>Séries</h4>
+            <div class="owl-carousel owl-theme">
+                <!--Caixas que iram armazenar as imagens a serem exibidas-->
+                <div class="item"><img class="box" src="Img/bigbang().jpg"></div>
+                <div class="item"><img class="box" src="img/chicagopd().jpg"></div>
+                <div class="item"><img class="box" src="Img/cobrakai().jpg"></div>
+                <div class="item"><img class="box" src="Img/criminalminds().jpg"></div>
+                <div class="item"><img class="box" src="Img/dragonball().jpg"></div>
+                <div class="item"><img class="box" src="Img/gameofthrones().jpg"></div>
+                <div class="item"><img class="box" src="Img/Greys().jpg"></div>
+                <div class="item"><img class="box" src="Img/house().jpg"></div>
+                <div class="item"><img class="box" src="Img/mentalist().jpg"></div>
+                <div class="item"><img class="box" src="Img/naruto().jpg"></div>
+                <div class="item"><img class="box" src="Img/originais().jpg"></div>
+                <div class="item"><img class="box" src="Img/simpsons().jpg"></div>
+                <div class="item"><img class="box" src="Img/supernatural().jpg"></div>
+                <div class="item"><img class="box" src="Img/teen().jpg"></div>
+                <div class="item"><img class="box" src="Img/the100().jpg"></div>
+                <div class="item"><img class="box" src="Img/thegood().jpg"></div>
+                <div class="item"><img class="box" src="Img/thevampire().jpg"></div>
+                <div class="item"><img class="box" src="Img/thewalking().jpg"></div>
+                <div class="item"><img class="box" src="Img/vikings().jpg"></div>
+            </div>
+        </div>
+        <!--OwlJs-->
+        <script src="Js/owl/jquery.min.js"></script>
+        <script src="Js/owl/owl.carousel.min.js"></script>
+        <script src="https://kit.fontawesome.com/ab964092f9.js" crossorigin="anonymous"></script>
+        <script src="js/owl/Main.js"></script>
     </body>
 </html>

@@ -1,0 +1,19 @@
+@media screen and (max-width: 700px){/*Quando a tela tiver até no máximo 700 px de largura ele irá aplicar essas regras definidas*/
+    header .caixa{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    header .caixa a{
+        margin:15px;
+    }
+    .botao{
+        margin-top: 5px;
+        width: 200px;
+    }
+}
+@media screen and (min-width: 1000px){/*Quando a tela tiver no minímo 1000 px de largura ele irá aplicar essas regras definidas*/
+    .descrição{
+        width: 50%;
+    }
+}
